@@ -1,0 +1,266 @@
+/* ------------------ Body --------------------*/
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: #905efb;
+}
+
+
+/* --------------------- Main -------------------*/
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+}
+
+
+/* -------------- Box Sizing -------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+}
+
+
+/* ----------- Contact Form --------------- */
+
+.contact-form{
+    height: fit-content;
+    max-width: 450px;
+    background-color: white;
+    padding: 20px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contact-form > *{
+    width: 100%;
+}
+
+
+
+/* --------------- Heading ---------------- */
+
+.contact-form .heading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 15px;
+}
+.contact-form .heading img{
+    width: 60px;
+    padding: 0px 10px;
+}
+.contact-form .heading span{
+    width: fit-content;
+    font-weight: 600;
+    word-spacing: 2px;
+    color: #303030;
+    font-size: 1.7rem;
+    word-spacing: 4px;
+    letter-spacing: -0.5px;
+}
+
+
+/* ------- Full Name & Email Address ------*/
+
+.full-name,
+.email-address{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 0px 10px;
+}
+
+.full-name{
+    padding-top: 0px;
+}
+
+.full-name label,
+.email-address label{
+    width: 100%;
+    padding: 0px 0px 2px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    word-spacing: 2px;
+    letter-spacing: -0.1px;
+}
+
+.full-name input,
+.email-address input{
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    width: 100%;
+    border: 2px solid #0000005c;
+    outline-color: #905efb;
+    border-radius: 3px;
+}
+
+
+
+/* --------- Mobile & DOB -----------*/
+
+.mobile-and-birth-date{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.mobile-and-birth-date span{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mobile-and-birth-date span label{
+    width: 100%;
+    padding: 0px 0px 2px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    word-spacing: 2px;
+    letter-spacing: -0.1px;
+}
+.mobile-and-birth-date span input{
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    border: 2px solid #0000005c;
+    outline-color: #905efb;
+    border-radius: 3px;
+}
+
+
+
+/* ------------ Gender --------------*/
+.gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0px  10px;
+}
+.gender label{
+    width: 100%;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.gender span label{
+    color: #000000d4;
+}
+.gender span{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.gender span input{
+    color: #783ef4;
+}
+
+
+
+/* ------------- Address -------------- */
+
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px 10px;
+}
+.address label{
+    width: 100%;
+    font: 0.95rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.address>span, .address #address{
+    width: 100%;
+    padding-bottom: 10px;
+}
+.address #address{
+    padding: 6px 10px;
+    width: 100%;
+    font-size: 0.95rem;
+    border: 2px solid #0000005c;
+    outline-color: #905efb;
+    border-radius: 3px;
+}
+
+.address div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.address div span{
+    width: 48%;
+}
+.address div input{
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    border: 2px solid #0000005c;
+    outline-color: #905efb;
+    border-radius: 3px;
+}
+
+
+
+/* ---------- Submit Button ------------*/
+
+.submit-button{
+    padding: 15px 0px 0px;
+}
+.submit-button > button{
+    width: 100%;
+    background-color: #783ef4;
+    border-radius: 5px;
+    color: white;
+    border: 0px solid ;
+    outline: none;
+    padding: 10px 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* --------- Responsiveness ------------*/
+
+@media screen and (max-width:578px){
+    .contact-form{
+        width: 90vw !important;
+        padding: 20px 20px;
+    }
+}

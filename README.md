@@ -45,7 +45,8 @@
 
 
 ## Overview 🌟
-The Simple Web Calculator is an easy-to-use tool for basic arithmetic operations like addition, subtraction, multiplication, and division. It's perfect for quick, everyday calculations.
+- This a Registration Form made using HTML, CSS.
+- The Code snippet of this webpage can be integrated in any website / Web project.
 
 
 ## [➡️ Registation Form ](https://abhinavkumar2369.github.io/Basic-Web-Registration-Form/)
